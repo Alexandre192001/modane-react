@@ -1,0 +1,45 @@
+.container_home_wrapper{
+    margin-top: 2rem;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    animation: animation_description_home 2s;
+    z-index: 2;
+}
+
+@keyframes animation_description_home{
+    from{
+        transform: translateY(50rem);
+        opacity: 0;
+    }   
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.img_logo{
+    border-radius: 50%;
+}
+
+
+.btn_home{
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+}
+
+.btn_home:hover{
+
+    border: solid 2px #FBDA61;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #fff 0%, #fff 100%);
+    color: #FF5ACD;
+}
