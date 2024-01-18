@@ -4,7 +4,7 @@ import style from './containerFull.module.css'
 export default function containerFull(props) {
   return (
     <div className={`${style.container_full_wrapper} ${style[props.customClass]}` }>
-        {props.children}
+        {props.children} 
     </div>
   )
 }
